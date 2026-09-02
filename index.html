@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Daily Links</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --text-color: #ffffff;
+            --card-bg: #1e1e1e;
+            --card-hover: #2a2a2a;
+            --accent-color: #00ff88;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .profile-title {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .profile-subtitle {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 30px;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .link-card {
+            background-color: var(--card-bg);
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 16px;
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 600;
+            transition: transform 0.2s, background-color 0.2s;
+            display: block;
+        }
+
+        .link-card:hover {
+            background-color: var(--card-hover);
+            transform: translateY(-2px);
+            border-color: var(--accent-color);
+        }
+
+        .date-badge {
+            font-size: 0.75rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Profile Info -->
+        <div class="profile-title">Lecture Video Links </div>
+        <div class="profile-subtitle">Updated every class day</div>
+
+        <!-- Links List -->
+        <div class="links-container">
+
+            <!-- COPY START: Duplicate this block to add a new link -->
+            <a href="https://example.com" target="_blank" class="link-card">
+                <span class="date-badge">September 2</span>
+                Types, Methods, Arrays
+            </a>
+            <!-- COPY END -->
+
+            <a href="https://example.com" target="_blank" class="link-card">
+                <span class="date-badge">August 31</span>
+                Types
+            </a>
+
+            <a href="https://github.com" target="_blank" class="link-card">
+                <span class="date-badge">Archive</span>
+                My GitHub Profile
+            </a>
+
+        </div>
+    </div>
+
+</body>
+</html>
