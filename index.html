@@ -66,6 +66,7 @@
             border-color: var(--accent-color);
         }
 
+
         .date-badge {
             font-size: 0.75rem;
             color: var(--accent-color);
@@ -74,6 +75,28 @@
             margin-bottom: 4px;
             display: block;
         }
+
+        /* Highlight the newest (first) link */
+.links-container .link-card:first-child {
+    background-color: #0b2a5c;
+    border-color: #3d8bff;
+    box-shadow: 0 0 18px rgba(61, 139, 255, 0.45);
+}
+
+.links-container .link-card:first-child:hover {
+    background-color: #103676;
+    border-color: #7db4ff;
+}
+
+.links-container .link-card:first-child .date-badge {
+    color: #7db4ff;
+}
+
+/* Optional: "NEW" tag */
+.links-container .link-card:first-child .date-badge::after {
+    content: " • NEW";
+    font-weight: bold;
+}
     </style>
 </head>
 <body>
@@ -98,7 +121,7 @@
 
                             <span class="date-badge">September 21: Class lecture: Abstract classes</span>
                     <p>Password: xuEj%2e8</p>
-                <p>Duration: 1 hr 34 minutes /p>
+                <p>Duration: 1 hr 34 minutes </p>
             </a>   
             
                                     <a href="https://usfca.zoom.us/rec/share/3lAFaISblp2o9clP-vLjKo4jTZ6ab-jUzalnrxgOE0W0d_og3bDLUMwqcO_i2Q-N.gTZpEBVRrmqvGgGg?startTime=1789671250000" target="_blank" class="link-card">
